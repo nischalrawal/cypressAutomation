@@ -1,0 +1,32 @@
+{
+  "name": "basic-store-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "adminDev": "npx cypress open --env panel=Admin,environment=Dev",
+    "adminStaging": "npx cypress open --env panel=Admin,environment=Staging'",
+    "ownerDev": "npx cypress open --env panel=Owner,environment=Dev",
+    "ownerDevWithArgs": "npx cypress open --env panel=Owner,environment=Dev,$npm_config_extra",
+    "ownerStaging" : "npx cypress open --env panel=Owner,environment=Staging",
+   
+    "ownerStagingWithArgs": "npx cypress open --env panel=Owner,environment=Staging",
+    "customerDev": "npx cypress open --env panel=Customer,environment=Dev",
+    "customerDevWithArgs": "npx cypress open --env panel=Customer,environment=Dev,$npm_config_extra",
+    "customerStaging": "npx cypress open --env panel=Customer,environment=Staging",
+    "customerStagingWithArgs": "npx cypress open --env panel=Customer,environment=Staging,$npm_config_extra"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^14.3.3",
+    "cypress-file-upload": "^5.0.8"
+  },
+  "dependencies": {
+    "jsonpath": "^1.1.1",
+    "node-xlsx": "^0.24.0",
+    "xlsx": "^0.20.2"
+  }
+}

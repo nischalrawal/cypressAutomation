@@ -1,0 +1,17 @@
+{
+  "rows": [
+    {
+      "storeName": "Store Jack",
+      "nameFurigana": "ジャック",
+      "English": "Jack",
+      "Explanation": "About me",
+      "represenName": "Max",
+      "repFurigana": "マックス",
+      "regularPrice": 1000,
+      "exFee": 150,
+      "nomFee": 45,
+      "accFee": 52,
+      "serFee": 6
+    }
+  ]
+}

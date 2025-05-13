@@ -1,0 +1,43 @@
+{
+  "Admin": {
+    "Dev": {
+      "BaseURL": "https://uatsuperadmin.hoslog.jp/",
+      "Username": "superadmin",
+      "Password": "Test@123"
+    },
+
+    "Staging": {
+      "BaseURL": "https://uat-admin.hoslog.jp/",
+      "Username": "superadmin",
+      "Password": "Test@123"
+    }
+  },
+
+  "Owner": {
+    "Dev": {
+      "BaseURL": "https://dev-owner.hoslog.jp/",
+      "Username": "KBCL1005",
+      "Password": "Test@123"
+    },
+
+    "Staging": {
+      "BaseURL": "https://uat-owner.hoslog.jp/",
+      "Username": "KBRD1280",
+      "Password": "Test@12345"
+    }
+  },
+
+  "Customer": {
+    "Dev": {
+      "BaseURL": "https://cus.hoslog.jp/login",
+      "Username": "nis",
+      "Password": "Test12345"
+    },
+
+    "Staging": {
+      "BaseURL": "https://uat.hoslog.jp/login",
+      "Username": "nimr",
+      "Password": "Test12345"
+    }
+  }
+}
