@@ -6,19 +6,15 @@ describe("dynamic Envrionment Variable", () => {
   it("Dynamic Varibales", () => {
     const panel = Cypress.env("panel"); // Set panel from CLI
     const env = Cypress.env("environment"); // Set panel from CLI
-   const userIndex = Cypress.env('userIndex') || 0;
+  //  const userIndex = Cypress.env('userIndex') || 0;
+  //  const userIndex = Cypress.env('userIndex');
+  const userIndex = Number(Cypress.env("userIndex"));
 
     console.log(panel);
     console.log(env);
     console.log(userIndex);
 
-    // console.log(panel);
-    // cy.log(env);
-    console.log(panel);
-    console.log(env);
-
-    // cy.log(Cypress.env("uat"));
-    // cy.log(env);
+    
 
     const mapSelector = {
       Admin: adminSelector,
@@ -33,6 +29,14 @@ describe("dynamic Envrionment Variable", () => {
     const users = config.Users;
 
     const selectedUsers = users[userIndex];
+
+    if(!selectedUsers) {
+      throw new Error(`User with index ${userIndex} not found in the configuration.`);
+    }
+
+
+
+
 
     cy.visit(baseURL);
 

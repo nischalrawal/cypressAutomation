@@ -9,7 +9,7 @@
     "adminStaging": "npx cypress open --env panel=Admin,environment=Staging'",
     "ownerDev": "npx cypress open --env panel=Owner,environment=Dev",
     "ownerDevWithArgs": "npx cypress open --env panel=Owner,environment=Dev,$npm_config_extra",
-    "ownerStaging" : "npx cypress open --env panel=Owner,environment=Staging",
+    "ownerStaging" : "npx cypress open --env panel=Owner,environment=Staging,userIndex=$npm_config_userIndex",
    
     "ownerStagingWithArgs": "npx cypress open --env panel=Owner,environment=Staging",
     "customerDev": "npx cypress open --env panel=Customer,environment=Dev",
