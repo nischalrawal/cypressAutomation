@@ -30,6 +30,8 @@ describe("dynamic Envrionment Variable", () => {
 
     const selectedUsers = users[userIndex];
 
+    console.log("Selected User: ", selectedUsers);
+    
     if(!selectedUsers) {
       throw new Error(`User with index ${userIndex} not found in the configuration.`);
     }
